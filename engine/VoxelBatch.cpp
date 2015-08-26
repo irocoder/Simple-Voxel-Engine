@@ -75,6 +75,7 @@ void VoxelBatch::close()
 
 void VoxelBatch::drawVoxels()
 {
+	glClearColor(0.191f, 0.300f, 0.473f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 	glBindBuffer(GL_ARRAY_BUFFER, vbo);

@@ -28,7 +28,9 @@ Map::Map(int width, int height, int depth)
 		{
 			for(int x = 0; x < width; x++)
 			{
-				if(y <= 3)
+				int r = std::rand();
+
+				if(r % 7 == 0)
 					place(GrassVoxel(x, y, z));
 				else
 					place(AirVoxel(x, y, z));
